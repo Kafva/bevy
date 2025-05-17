@@ -46,7 +46,7 @@ bevy_ecs = { path = "../bevy_ecs", version = "0.16.0", default-features = false 
 bevy_reflect = { path = "../bevy_reflect", version = "0.16.0", default-features = false, optional = true }
 
 # other
-accesskit = { version = "0.18", default-features = false }
+accesskit = { git = "https://github.com/Kafva/accesskit", branch = "devel", default-features = false }
 serde = { version = "1", default-features = false, features = [
   "alloc",
 ], optional = true }

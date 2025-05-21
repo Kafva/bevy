@@ -225,7 +225,8 @@ pub fn create_monitors(
             idx += 1;
             true
         } else {
-            info!("Monitor removed {}", entity);
+            // TODO: iOS
+            // info!("Monitor removed {}", entity);
             commands.entity(*entity).despawn();
             idx += 1;
             false

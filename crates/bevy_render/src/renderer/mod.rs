@@ -76,7 +76,8 @@ pub fn render_system(world: &mut World, state: &mut SystemState<Query<Entity, Wi
     }
 
     {
-        let _span = info_span!("present_frames").entered();
+        // TODO: iOS
+        // let _span = info_span!("present_frames").entered();
 
         // Remove ViewTarget components to ensure swap chain TextureViews are dropped.
         // If all TextureViews aren't dropped before present, acquiring the next swap chain texture will fail.
